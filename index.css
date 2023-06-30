@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #0b372dbb;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.9rem 0;
+  z-index: 9999;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  margin: 0 2rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: gray;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+  font-weight: 300;
+  font-size: 0.88rem;
+}
+
+.toogle {
+  padding-left: 1.5rem;
+}
+
+.toogle a {
+  display: flex;
+  padding: 0;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+
+.toogle .bar {
+  position: relative;
+  width: 52%;
+  height: 1.3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.toogle .bar:before,
+.toogle .bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-radius: 2px;
+  height: 100%;
+  background-color: inherit;
+}
+
+.toogle .bar::before {
+  top: -5px;
+  background-color: gray;
+}
+.toogle .bar::after {
+  top: 5px;
+  background-color: gray;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.parallax {
+  pointer-events: none;
+  transition: 0.5 cubic-bezier(0.28, 0.55, 0.43, 0.99);
+}
+
+.b-img {
+  position: absolute;
+  width: 194.44%;
+  top: 1.68%;
+  left: 50.69%;
+  z-index: 1;
+}
+
+.fog-7 {
+  position: absolute;
+  width: 131.9%;
+  top: 56.94%;
+  left:70.833%;
+  z-index: 2;
+}
+
+.mountain-10 {
+  position: absolute;
+  width: 61.94%;
+  top: 54.791%;
+  left: 65.972%;
+  z-index: 3;
+}
+
+.fog-6 {
+  position: absolute;
+  width: 98.47%;
+  top: 52.29%;
+  left:47.91%;
+  z-index: 4;
+}
+
+.mountain-9 {
+  position: absolute;
+  width: 32%;
+  top: 63.88%;
+  left: 18.26%;
+  z-index: 5;
+}
+
+.mountain-8 {
+  position: absolute;
+  width:42.36%;
+  top: 65.97%;
+  left: 35.97%;
+  z-index: 6;
+}
+
+.fog-5 {
+  z-index: 13;
+  top: 60.34%;
+  left: 48.06%;
+  width: 99.65%;
+}
+
+.mountain-7 {
+  position: absolute;
+  width: 35.76%;
+  top: 59.3%;
+  left: 71.18%;
+  z-index: 8;
+}
+
+.text {
+  position: absolute;
+  z-index: 9;
+  top: calc(50% - 100px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  pointer-events: auto;
+}
+
+.text h2 {
+  font-weight: 100;
+  font-size: 6.5rem;
+  line-height: 0.88;
+}
+
+.text h1 {
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 0.88;
+}
+
+.mountain-6 {
+  position: absolute;
+  width: 26.63%;
+  top: 59.72%;
+  left: 90.2%;
+  z-index: 10;
+}
+
+.fog-4 {
+  position: absolute;
+  width: 37.7%;
+  top: 65.48%;
+  left: 45.84%;
+  z-index: 11;
+}
+
+.mountain-5 {
+  position: absolute;
+  width: 40.4%;
+  top: 75.76%;
+  left: 59.72%;
+  z-index: 12;
+}
+
+.mountain-4 {
+  position: absolute;
+  width:49.79%;
+  top: 78.32%;
+  left: 23.51%;
+  z-index: 14;
+}
+
+.mountain-2 {
+  position: absolute;
+  width: 43.4%;
+  top: 70%;
+  left: 78.61%;
+  z-index: 17;
+}
+
+.mountain-1 {
+  position: absolute;
+  width: 31.25%;
+  z-index: 18;
+  top: 66.35%;
+  left: 8.27%;
+}
+
+.mountain-3 {
+  position: absolute;
+  width: 29.09%;
+  top: 59.23%;
+  left:101.11%;
+  z-index: 14;
+}
+
+.sun-rays {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.31%;
+  z-index: 19;
+  pointer-events: none;
+}
+
+.black-shadow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  width: 100%;
+  pointer-events: none;
+}
+
+.fog-1 {
+  position: absolute;
+  width: 11.11%;
+  top: 24.35%;
+  left: 50%;
+  z-index: 21;
+}
+
+.viniette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 65% rgba(0, 0, 0, 0.7)
+  );
+  z-index: 100;
+  pointer-events: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .text h1 {
+    font-size: 5.8rem;
+  }
+
+  .text h2 {
+    font-size: 4.7rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .text h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+  .text h2 {
+    font-size: 4.1rem;
+    line-height: 1.1;
+  }
+
+  header {
+    padding: 0 1rem;
+  }
+
+  header nav{
+    width: 100%;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  header ul a {
+    font-size: 0.73;
+    padding: 0 0.9rem;
+  }
+
+  .toggle {
+    padding-left: 0.9rem;
+  }
+
+  .toggle a {
+    width: 30px;
+    height: 30px;
+  }
+
+ .b-img{
+  width: initial;
+  height: 311.104%;
+ }
+
+
+
+.mountain-1{
+  width: initial;
+  height: 50%;
+}.mountain-2{
+  width: initial;
+  height: 69.44%;
+}.mountain-3{
+  width: initial;
+  height: 46.544%;
+}.mountain-4{
+  width: initial;
+  height: 79.66%;
+}
+.mountain-5{
+  width: initial;
+  height: 64.64%;
+}.mountain-6{
+  width: initial;
+  height: 42.608%;
+}.mountain-7{
+  width: initial;
+  height: 57.216;
+}
+
+/* .mountain-8{
+  width: initial;
+  height: 67.77%;
+} */
+
+.mountain-9{
+  width: initial;
+  height: 51.2%;
+}.mountain-10{
+  width: initial;
+  height: 99.104;
+}
+
+.fog-1{
+  width: initial;
+  height: 17.77%;
+
+}
+.fog-2{
+  width: initial;
+  height: 80.8%;
+
+}
+.fog-3{
+  width: initial;
+  height: 80.8%;
+
+}
+.fog-4{
+  width: initial;
+  height: 60.32%;
+
+}
+.fog-5{
+  width: initial;
+  height: 159.44%;
+
+}
+
+.fog-6{
+  width: initial;
+  height: 157.55;
+
+}
+
+
+
+.fog-7{
+  width: initial;
+  height: 211.04%
+
+}
+
+.home{
+  display: none;
+}
+
+
+.about{
+    display: none;
+
+}
+
+.contact{
+  display: none;
+}
+
+.project{
+
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 520px) {
+  .text h1 {
+    font-size: 3.3rem;
+  }
+
+  .text h2 {
+    font-size: 2.6rem;
+  }
+}
